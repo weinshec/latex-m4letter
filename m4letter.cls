@@ -175,13 +175,13 @@
       \begin{center}
         \ifthenelse{\isundefined{\@bank}}
           {}
-          {\@bank}\\
+          {\@bank\\}
         \ifthenelse{\isundefined{\@iban}}
           {}
-          {\@iban}\\
+          {\@iban\\}
         \ifthenelse{\isundefined{\@bic}}
           {}
-          {BIC: \@bic}\\
+          {BIC: \@bic\\}
       \end{center}
     \end{minipage}
     \hfill
