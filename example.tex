@@ -1,0 +1,84 @@
+\documentclass[fontsize=12pt, paper=a4]{m4letter}
+
+%_______________________________________________________________________________
+%                                                                       PACKAGES
+\usepackage[english, ngerman]{babel}
+\usepackage[utf8]{inputenc} 
+
+%_______________________________________________________________________________
+%                                                                       SETTINGS
+% Sender information
+% optional attributes are: \phone, \mobile, \mail, \homepage, \fax
+\name{Werner}{Heisenberg}
+\street{Poststraße 5}
+\zipcode{D-12345}
+\city{Berlin}
+\mobile{+49 170 1234567}
+\mail{werner@heisenberg.de}
+
+% [optional] Place and Date
+% if not specified, date uses \today, place is omitted
+\place{Leipzig}
+\date{\today}
+
+% [optional] Signature,
+% if not given, <firstname> <lastname> will be used
+\signature{W.\ Heisenberg}
+
+% [optional] Reference line items
+% define reference items like \reflineitem{name}{label}{value}
+% \reflineitem{myphone}{Durchwahl}{-39}
+
+% [optional] Bank account in footer
+% specify as \bank{NAME}{IBAN}{BIC}
+\bank{Landeshochschulkasse}{DE42 1234 5678 1234 5678 12}{GENODE31JN}
+
+% [optional] Highlights color
+\definecolor{highlights}{HTML}{268bd2}
+
+
+%_______________________________________________________________________________
+%                                                                    LETTER BODY
+\begin{document}
+
+\begin{letter}{%
+  Maxi Musterfrau\\
+  Nebenstraße  2\\
+  12345 Musterhausen\\
+}
+
+\subject{On Mesons and Bosons}
+
+\opening{Sehr geehrte radioaktive Damen und Herren,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet varius
+blandit. Sus- pendisse ligula tortor, feugiat in dapibus a, dictum vel
+risus. Nulla at justo vitae velit sodales dignissim. Curabitur volutpat
+porttitor pulvinar. Quisque vulputate massa vitae dui sagittis at ultrices lorem
+sagittis. Nullam lobortis tincidunt libero, et tincidunt urna consectetur ac.
+Proin laoreet commodo auctor.
+
+Nullam nec eros enim. Maecenas commodo sem
+consectetur neque ullamcorper vel iaculis massa hendrerit. Integer et sem et
+justo pharetra mattis ut id ante. Class aptent taciti sociosqu ad litora
+torquent per conubia nostra, per inceptos hime- naeos. Donec elementum pulvinar
+diam in accumsan. Nam laoreet tincidunt tincidunt. Nam hendrerit, lorem vel
+gravida fringilla, tellus augue vulputate neque, eu laoreet magna metus eu
+ante. Nullam auctor arcu augue, sed fringilla velit. Nunc auctor mattis nisl,
+sed iaculis dolor auctor faucibus. Cras libero ligula, dapibus vel egestas non,
+porta et ante. Nulla dolor sapien, mollis sed sodales a, posuere vitae ante.
+
+% Closing greeting
+\closing{Mit freundlichen Grüßen,}
+
+% [optional] Enclosings
+\encl{Lebenslauf}
+
+% [optional] CC, colecopy
+\cc{DRK, MHD, ASB}
+
+% [optional] PostScriptum
+\ps{PS:} Lebe lang und in Frieden
+
+\end{letter}
+\end{document}
